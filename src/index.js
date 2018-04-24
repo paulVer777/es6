@@ -100,3 +100,44 @@ console.log(
     `My favourite color is ${isGreenFavourite ? '':'not'} green!`
 );
 
+//ARROW FUNCTIONS
+
+const addOne=(a)=>{
+
+    return a+1
+
+};
+
+console.log(addOne(2));
+
+
+//skrocona wersja
+
+const addOneV2=a=>{
+
+    return a+1;
+
+};
+
+//skrocona wersja 2
+
+const addOneV3=a=>a+1;
+
+//
+
+
+//funkcja dodająca dwie cyfry
+
+const sum=(a,b)=>a+b; //jesli robi sie klamerki musi byc return:)
+
+
+
+/////////////////////////////
+
+/////////Funkcja samo wywolujaca sie przypisana do zmiennej////////
+
+const suma=((a,b)=>a+b)(4,4);
+
+alert(suma);
+
+/////////////////////////
