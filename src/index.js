@@ -31,6 +31,8 @@ console.log(j);
 
 // var can be redeclared
 
+/*
+
 var name="Marry";
 var name="John";
 
@@ -40,3 +42,30 @@ var name="John";
 let name2="Jason";
 let name2="Michael";
 
+*/
+
+//hoisting
+
+//var is hoisted
+// let isnt hoisted
+
+function f() {
+
+    x=2;
+    var x
+    console.log('hoisting var',x)
+
+
+}
+
+function g() {
+
+    x=2
+    let x
+
+    console.log('hoisting let',x)
+
+}
+
+
+//const, const nie da się nadpisać, jest to wartość stała.
