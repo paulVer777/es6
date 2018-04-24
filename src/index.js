@@ -1,3 +1,10 @@
+
+import {name3} from './export'   //sciaganie zmiennych z innego pliku.
+
+console.log(name3);
+
+
+
 console.log("Hello World!");
 
 
@@ -151,20 +158,20 @@ const returnObj=()=> ({name:"Mateusz"});// bedzie dzialac
 
 //////////////////////////////////
 
-
+/*
 var Licznik = function () {
 
     this.count = 0;
 
     setInterval((function () {
+        console.log(this);
+        this.count++;       //bind przypisal funkcje do nowego obiektu.
 
-        this.count++;       //bind przypisal funkcje do nowego obiektu
-
-    }).bind(this), 1000)
+    }), 1000)
 
 
 };
-
+``
 
 function ArrowCounter() {
 
@@ -179,6 +186,12 @@ function ArrowCounter() {
 
 }
 
+/*
 window.counter = new Licznik();
 
 window.arrowCounter = new ArrowCounter();
+
+*/
+
+
+
