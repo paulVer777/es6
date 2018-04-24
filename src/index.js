@@ -84,9 +84,9 @@ x = 5;
 
 //Template strings
 
-const name='Mateusz';
+const name = 'Mateusz';
 
-const helloTxt=`Hello ${name}!`;
+const helloTxt = `Hello ${name}!`;
 
 console.log(helloTxt);
 
@@ -94,17 +94,17 @@ console.log(helloTxt);
 ///
 
 
-let isGreenFavourite=false;
+let isGreenFavourite = false;
 
 console.log(
-    `My favourite color is ${isGreenFavourite ? '':'not'} green!`
+    `My favourite color is ${isGreenFavourite ? '' : 'not'} green!`
 );
 
 //ARROW FUNCTIONS
 
-const addOne=(a)=>{
+const addOne = (a) => {
 
-    return a+1
+    return a + 1
 
 };
 
@@ -113,31 +113,72 @@ console.log(addOne(2));
 
 //skrocona wersja
 
-const addOneV2=a=>{
+const addOneV2 = a => {
 
-    return a+1;
+    return a + 1;
 
 };
 
 //skrocona wersja 2
 
-const addOneV3=a=>a+1;
+const addOneV3 = a => a + 1;
 
 //
 
 
 //funkcja dodająca dwie cyfry
 
-const sum=(a,b)=>a+b; //jesli robi sie klamerki musi byc return:)
-
+const sum = (a, b) => a + b; //jesli robi sie klamerki musi byc return:)
 
 
 /////////////////////////////
 
 /////////Funkcja samo wywolujaca sie przypisana do zmiennej////////
 
-const suma=((a,b)=>a+b)(4,4);
+const suma = ((a, b) => a + b)(4, 4);
 
 alert(suma);
 
 /////////////////////////
+
+
+/*
+
+const returnObj=()=> {name:"Mateusz"}; //nie bedzie dzialas bo interpretator mysli ze to blok kodu
+const returnObj=()=> ({name:"Mateusz"});// bedzie dzialac
+
+*/
+
+//////////////////////////////////
+
+
+var Licznik = function () {
+
+    this.count = 0;
+
+    setInterval((function () {
+
+        this.count++;       //bind przypisal funkcje do nowego obiektu
+
+    }).bind(this), 1000)
+
+
+};
+
+
+function ArrowCounter() {
+
+    this.count = 0;
+
+    setInterval(
+        () => this.count++
+        ,
+        1000
+    )
+
+
+}
+
+window.counter = new Licznik();
+
+window.arrowCounter = new ArrowCounter();
