@@ -1,8 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+console.log("Hello World!");
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+//
+
+for(var i=0;i<4;i++)
+{
+
+    console.log(i);
+
+
+}
+
+console.log(i);
+
+///let
+
+
+for(let i=0;i<4;i++)
+{
+
+    console.log(j);
+
+
+}
+
+console.log(j);
