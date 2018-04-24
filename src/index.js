@@ -49,23 +49,54 @@ let name2="Michael";
 //var is hoisted
 // let isnt hoisted
 
+/*
+
 function f() {
 
-    x=2;
+    x = 2;
     var x
-    console.log('hoisting var',x)
+    console.log('hoisting var', x)
 
 
 }
 
 function g() {
 
-    x=2
+    x = 2
     let x
 
-    console.log('hoisting let',x)
+    console.log('hoisting let', x)
 
 }
 
+*/
+//const, const nie da się nadpisać, jest to wartość stała. Let można nadpisywać.
 
-//const, const nie da się nadpisać, jest to wartość stała.
+
+//Const
+/*
+const x = 10;
+x = 5;
+
+*/
+//nie można ponownie inicjalizowac.
+
+
+//Template strings
+
+const name='Mateusz';
+
+const helloTxt=`Hello ${name}!`;
+
+console.log(helloTxt);
+
+
+///
+
+
+let isGreenFavourite=false;
+
+console.log(
+    `My favourite color is ${isGreenFavourite ? '':'not'} green!`
+);
+
